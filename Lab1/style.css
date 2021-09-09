@@ -8,6 +8,10 @@
     grid-template-areas: "left-aside header header" "left-aside top-main-aside right-aside" "left-aside main right-aside" "footer footer footer";
 }
 
+body {
+    margin: 0px;
+}
+
 .header {
     background-color: lightblue;
     grid-area: header;
@@ -38,7 +42,20 @@
     grid-area: footer;
 }
 
-.navigation__link--active {
+.header,
+.left-aside,
+.main,
+.right-aside,
+.footer {
+    padding: 20px;
+}
+
+.navigation {
+    padding: 10px;
+}
+
+.navigation__link {
+    padding: 5px;
     position: relative;
 }
 
